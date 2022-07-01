@@ -1,6 +1,6 @@
-import { ApolloClient, OperationVariables, MutationOptions, ApolloError, NetworkStatus } from "apollo-client";
+import { ApolloClient, OperationVariables, MutationOptions, ApolloError, NetworkStatus } from "@apollo/client/core";
 
-import { FetchResult, DocumentNode } from "apollo-link";
+import { FetchResult, DocumentNode } from "@apollo/client/link/core";
 import { JSX } from "@stencil/core";
 
 export type QueryResult<TData = {}, TVariables = OperationVariables> = {

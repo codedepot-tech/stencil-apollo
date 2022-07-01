@@ -1,7 +1,7 @@
 import { Component, Prop, State, Element, Watch, Event, EventEmitter } from "@stencil/core";
 import { DocumentNode } from "graphql";
 import { QueryResult, QueryRenderer } from "../../utils/types";
-import { ApolloClient, WatchQueryOptions, ApolloQueryResult, ObservableQuery } from "apollo-client";
+import { ApolloClient, WatchQueryOptions, ApolloQueryResult, ObservableQuery } from "@apollo/client/core";
 import { ApolloProviderConsumer } from "../../utils/apollo-client-state";
 
 @Component({
@@ -45,6 +45,7 @@ export class ApolloQueryComponent {
         message: this.originalResult && this.originalResult.errors && this.originalResult.errors[0] && this.originalResult.errors[0].message,
         name: this.originalResult && this.originalResult.errors && this.originalResult.errors[0] && this.originalResult.errors[0].name,
         extraInfo: this.originalResult && this.originalResult.errors && this.originalResult.errors[0] && this.originalResult.errors[0].originalError,
+        clientErrors: undefined 
       },
       variables: this.variables,
       networkStatus: this.originalResult && this.originalResult.networkStatus,

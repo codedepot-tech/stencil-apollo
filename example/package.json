@@ -16,14 +16,14 @@
     "test.watch": "jest --watch"
   },
   "dependencies": {
-    "apollo-boost": "0.4.7",
-    "graphql": "15.0.0",
-    "graphql-tag": "2.10.3",
-    "stencil-apollo": "0.1.5"
+    "@apollo/client": "^3.6.9",
+    "graphql": "15.8.0",
+    "stencil-apollo": "./../lib/"
   },
   "devDependencies": {
     "@stencil/core": "1.12.7",
-    "@types/graphql": "14.2.3"
+    "@types/graphql": "^14.5.0",
+    "workbox-build": "^6.5.3"
   },
   "repository": {
     "type": "git",

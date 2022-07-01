@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { ApolloClient, MutationOptions, SubscriptionOptions, WatchQueryOptions, } from "apollo-client";
+import { ApolloClient, MutationOptions, SubscriptionOptions, WatchQueryOptions, } from "@apollo/client/core";
 import { ConsumerRenderer, } from "./utils";
 import { DocumentNode, } from "graphql";
 import { MutationFn, MutationRenderer, QueryRenderer, QueryResult, SubscriptionRenderer, } from "./utils/types";

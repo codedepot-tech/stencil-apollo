@@ -1,5 +1,5 @@
 import { h, Component, Prop } from '@stencil/core';
-import ApolloClient from 'apollo-boost';
+import ApolloClient from '@apollo/client/core';
 
 const client = new ApolloClient({
   uri: 'https://graphql-voter-app.herokuapp.com/'
